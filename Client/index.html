@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+
+	<title>Help Me</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUE9SXHayTCBZhEYl0fB1L-RfYK-Iit9w&libraries=places"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="http://172.23.31.196:3000index.css">
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<script src="/index.js"></script>
+
+</head>
+
+<body class="container-fluid">
+
+	<!--Desktop View-->
+	<div id="Desktop">
+	<div  class="row">
+
+		<div class="col nopadding">
+			<div class="sec1">
+				<div style="padding: 20px;">
+					<div class="alert sexual_assault" >
+						<div  style="height: 30px"></div>
+						sexual assault
+					</div>					
+				</div>
+				<div style="padding: 20px;">
+					<div class="alert Other" >
+						Other
+					</div>					
+				</div>
+			</div>
+    	</div>
+	
+		<div class="col">
+
+   			<div class="row">
+				<div class="col-12 sec2" id="tabs" style="overflow: auto;">
+
+				</div>
+    		</div>
+
+    		<div class="row">
+				<div id="map" class=" col-12 sec3">
+
+				</div>
+    		</div>
+		</div>
+
+	</div>
+	</div>
+	<!--Mobile View-->
+	<div id="Mobile">
+		<div class="row" style="background: #606060">
+			<button id="tab1" class="col-6 btn btn-primary" style="color: white; text-align: center;">Help Me</button> 
+			<button id="tab2" class="col-6 btn btn-primary" style="color: white; text-align: center;">Help Others</<button>
+		</div>
+
+		<div id="view1">
+			<div class="row">
+				<div class="col-6" style="padding: 5px;">
+				<div class="mobile_alert" style="background: red">
+					Sexual assult
+				</div>
+				</div>
+				<div class="col-6" style="padding: 5px;">
+				<div class="mobile_alert" style="background: purple">
+					Robbery
+				</div>
+				</div>
+
+				<div class="col-6" style="padding: 5px;">
+				<div class="mobile_alert" style="background: blue">
+					Other
+				</div>
+				</div>	
+
+			</div>
+		</div>
+		<div id="view2" style="display: none;">
+
+   			<div class="row">
+				<div class="col-12" id="mobile_tabs" style="overflow: auto;">
+
+				</div>
+    		</div>
+
+			<div id="mobile_map" class="col-12"></div>
+
+		</div>
+	</div>
+</body>
+
+</html>
